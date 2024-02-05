@@ -200,12 +200,6 @@ internal struct Anvil: ViewModifier, ProgressableAnimation, AnimatableModifier {
     }
 }
 
-extension EdgeInsets {
-    var inverse: Self {
-        EdgeInsets(top: -top, leading: -leading, bottom: -bottom, trailing: -trailing)
-    }
-}
-
 #if os(iOS) && DEBUG
 struct Anvil_Preview: PreviewableAnimation, PreviewProvider {
   static var animation: Anvil {
